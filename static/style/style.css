@@ -1,0 +1,35 @@
+.container-logo{
+    height: 200px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100px;
+}
+.moes{
+    height: 100px;
+    position: absolute;
+ 
+    
+  
+}
+.bitcoin{
+    position:absolute;
+    top: 40px;
+    height: 100px;
+    animation: sobe-desce 2s ease-in-out infinite;
+
+}
+@keyframes sobe-desce {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
