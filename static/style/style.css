@@ -1,5 +1,13 @@
+
+*{
+    border: 1px dashed green;
+}
 .container-logo{
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
 }
 .logo{
     display: flex;
@@ -32,4 +40,13 @@
     100%{
         transform: translateY(0px);
     }
+}
+.texto-sobre{
+    width: 600px;
+}
+.texto-sobre p{
+    text-align: center  ;
+    padding: 0px;
+    margin: 0px;
+>>>>>>> 4e35d6b (Pequenas Alterações no site, adicionado a capacidade de prever)
 }

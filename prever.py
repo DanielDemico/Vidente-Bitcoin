@@ -1,3 +1,4 @@
+
 import yfinance as yf
 import pandas as pd  
 import os
@@ -52,4 +53,5 @@ def gerar_previsao():
         plt.savefig(caminho)
     return previsao_futura
     
+>>>>>>> 4e35d6b (Pequenas Alterações no site, adicionado a capacidade de prever)
    

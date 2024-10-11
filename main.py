@@ -1,3 +1,4 @@
+
 from flask import Flask,render_template,redirect
 from prever import gerar_previsao
 
@@ -8,7 +9,8 @@ def home():
     global previsao
     
     imagem = "./static/imagens/previsao.png"
-    return render_template("index.html")
+    return render_template("index.html",
+                            previsao=previsao)
 
 @app.route("/gerar", methods=["POST"])
 def gerar():
@@ -19,4 +21,5 @@ def gerar():
     return redirect("/")
 
 if __name__ == '__main__':
+>>>>>>> 4e35d6b (Pequenas Alterações no site, adicionado a capacidade de prever)
     app.run(debug=True)
