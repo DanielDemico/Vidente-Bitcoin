@@ -21,5 +21,4 @@ def gerar():
     return redirect("/")
 
 if __name__ == '__main__':
->>>>>>> 4e35d6b (Pequenas Alterações no site, adicionado a capacidade de prever)
     app.run(debug=True)

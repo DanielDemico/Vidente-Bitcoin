@@ -45,7 +45,7 @@ def gerar_previsao():
     plt.ylabel("Preço em USD")
     plt.legend()
     
-    caminho = "./static/imagens/previsao.png"
+    caminho = f"./static/imagens/previsao_{pd.Timestamp.today().strftime('%Y-%m-%d')}.png"
     if os.path.isfile(caminho):
         os.remove(caminho)
         plt.savefig(caminho)
@@ -53,5 +53,5 @@ def gerar_previsao():
         plt.savefig(caminho)
     return previsao_futura
     
->>>>>>> 4e35d6b (Pequenas Alterações no site, adicionado a capacidade de prever)
+
    

@@ -15,11 +15,11 @@
 
     <body>
         <header>
-            <h1>Bitcoin Psychic</h1>
+            <p>Bitcoin Psychic</p>
         </header>
         <main>
             <!--Sessão da Logo e sobre  -->
-            <section>
+            <section class="sobre">
                 <div class="container-logo">
                     <div class="logo">
                         <img class="moes" src="../static/imagens/hands.png">
@@ -28,11 +28,77 @@
                     <div class="texto-sobre">
                         <p>Esse é um pequeno projeto realizado para meus conhecimentos sobre Machine Learning, O algoritimo realiza uma previsão do preço do bitcoin (apenas do dia seguinte), atráves de aprendizagem Linear</p>
                     </div>
+              
+
+                    
                 </div>
+                <div>
+                    <img src="../static/imagens/tecnologias-logo/logo.png">
+                </div>
+            </section>
+            
+
+                <!-- Sessão de tecnologias -->
+            <section class="tecnologias d-flex flex-column justify-content-center align-items-center ">
+
+                <p class="title-tec">Tecnologias</p>
+
+                <div class="cards row container justify-content-center gap-5">
+                    <div class="card col-lg-2 col-md-5 col-9" onMouseOver="mostrarDesc(0)" onMouseOut="tirarDesc(0)">
+                        <div class="imagem-card">
+                            <img src="../static/imagens/tecnologias-logo/HTML-CSS-JS-Logo.png">
+                        </div>
+                        <div class="texto-card">
+                            <p>HTML/CSS/JS</p>
+                        </div>
+                        <div class="descricao">
+                            <p>Breve Descrição</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="card col-lg-2 col-md-5 col-9" onMouseOver="mostrarDesc(1)" onMouseOut="tirarDesc(1)">
+                        <div class="imagem-card">
+                            <img src="../static/imagens/tecnologias-logo/bs-logo.png">
+                        </div>
+                        <div class="texto-card">
+                            <p>Bootstrap</p>
+                        </div>
+                        <div class="descricao">
+                            <p>Breve Descrição</p>
+                        </div>
+                    </div>
+
+                   <div class="card col-lg-2 col-md-5 col-9"  onMouseOver="mostrarDesc(2)" onMouseOut="tirarDesc(2)">
+                        <div class="imagem-card">
+                            <img src="../static/imagens/tecnologias-logo/python-logo.png">
+                        </div>
+                        <div class="texto-card">
+                            <p>Python</p>
+                        </div>
+                        <div class="descricao">
+                            <p>Breve Descrição</p>
+                        </div>
+                    </div>
+
+                   <div class="card col-lg-2 col-md-5 col-9"  onMouseOver="mostrarDesc(3)" onMouseOut="tirarDesc(3)">
+                        <div class="imagem-card">
+                            <img src="../static/imagens/tecnologias-logo/Scikit_learn_logo_small.svg.png">
+                        </div>
+                        <div class="texto-card">
+                            <p>Scikit Learn</p>
+                        </div>
+                        <div class="descricao">
+                            <p>Breve Descrição</p>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
             <!--Criar e mostrar -->
             <section>
+
             <form method="POST" action="/gerar">
                 <button class="btn btn-primary" type="submit" onclick="calma()">PREVER!</button>
             <form>
@@ -49,11 +115,21 @@
         </main>
 
         <footer>
-            <p>Aqui vão ficar todos os dados de contato</p>
+           <div class="texto">     
+                <p> Desenvolvido por Daniel Cezar </p>
+           </div>
+           <div class="lista">
+                <ul>
+                    <li><i class="fa-brands fa-github"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                </ul>
+           </div>
         </footer>
  
         <script src="../static/script/js.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/7cbeed6b47.js" crossorigin="anonymous"></script>
     </body>
 </html>
->>>>>>> 4e35d6b (Pequenas Alterações no site, adicionado a capacidade de prever)
+

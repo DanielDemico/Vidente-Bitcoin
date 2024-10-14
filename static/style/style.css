@@ -1,9 +1,44 @@
 
 *{
-    border: 1px dashed green;
+    padding: 0;
+    margin: 0;
+   
+}
+body{
+    height: 100vh;
+}
+:root{
+    --preto-primary: #1f1f1f;
+    --dourado: #d4af37; 
+
+    --azul-primary: #0D1B2A;
+    --verder-primary: #2DCE89;
+
+    --cinza: #2C2C2C;
+    --laranja: #F7931A;
+
+    --branco: #F5F5F5;
+    --cinza-secondary: #EAEAEA;
+    --cinza-terciary: #B0B0B0;
+}
+header{
+    background-color: var(--preto-primary);
+    padding: 20px;
+}
+header p{
+
+    color: var(--branco);
+    font-size: 36px;
+    margin: 0px;
+}
+
+
+.sobre{
+    background-color: var(--cinza-terciary);
+    
 }
 .container-logo{
-    height: 200px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,11 +77,105 @@
     }
 }
 .texto-sobre{
-    width: 600px;
+    width: 1000px;
+    margin-top: 100px;
 }
 .texto-sobre p{
+    font-size: 26px;
     text-align: center  ;
     padding: 0px;
     margin: 0px;
->>>>>>> 4e35d6b (Pequenas Alterações no site, adicionado a capacidade de prever)
+    
 }
+
+
+.tecnologias{
+    background-color: var(--azul-primary);
+    height: 500px;
+    
+}
+.cards{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+.title-tec{
+    font-size: 46px;
+    font-weight: 600;
+    color: var(--dourado);
+}
+
+.card{
+    cursor: pointer;
+    height: 200px !important;
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    box-shadow: 2px 2px 5px var(--cinza-terciary);
+    transition: 0.2s;
+}
+.card:hover{
+    height: 300px !important;
+}
+.imagem-card{
+   margin: auto;
+    width: 80%;
+    height: 80%;
+    transition: 0.2s;
+    
+
+}
+.imagem-card img{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+.texto-card{
+    line-break: normal;
+    margin: auto;
+    color: var(--dourado);
+    font-weight: 600;
+}
+.descricao{
+    display: none;
+    color:var(--branco)
+}
+
+
+
+footer{
+    background-color: var(--cinza);
+    color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.texto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.texto p{
+    margin: 0px;
+}
+.lista{
+    display: flex;
+    align-items: center;
+}
+.lista ul{
+    list-style: none;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+.lista ul li{
+    font-size: 40px;
+    margin: 0px 20px;
+    padding: 0px;
+
+}
+
